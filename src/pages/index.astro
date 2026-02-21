@@ -1,21 +1,25 @@
 ---
-import Badges from "../components/Badges.astro";
 import IconGithub from "../components/icons/IconGithub.astro";
 import IconLinkedin from "../components/icons/IconLinkedin.astro";
 import IconGmail from "../components/icons/IconGmail.astro";
 import IconWhatsApp from "../components/icons/IconWhatsApp.astro";
 import IconWork from "../components/icons/IconWork.astro";
-import Maintag from "../components/Maintag.astro";
+import IconProyects from "../components/icons/IconProyects.astro";
+
 import Layout from "../layouts/Layout.astro";
-import Experience from "../components/Experience.astro";
+
+import Badges from "../components/Badges.astro";
 import SectionConteiner from "../components/SectionConteiner.astro";
+import Maintag from "../components/Maintag.astro";
+import Experience from "../components/Experience.astro";
+import Proyect from "../components/Proyect.astro";
 ---
 
 <Layout
 	title="Portafolio - Aldo Leonel Zunino Becerra - Full Stack Developer"
 	description="Portafolio de Aldo Leonel Zunino Becerra, programador y desarrollador full stack, especializado en desarrollo web y automatización de procesos, impulsando la adopción de herramientas de IA y mentoría técnica.."
 >
-	<main>
+	<main class="px-4">
 		<SectionConteiner class="py-18 pb-20">
 			<img
 				class="rounded-4xl w-2xs h-2xs mb-6"
@@ -23,7 +27,7 @@ import SectionConteiner from "../components/SectionConteiner.astro";
 				alt="principal logo"
 			/>
 			<h1
-				class="text-4xl font-bold text-white text-center mt-10 flex flex-row gap-x-5 pb-6"
+				class="text-2xl lg:text-4xl md:text-4xl font-bold text-white text-center mt-10 flex flex-row gap-x-5 pb-6"
 			>
 				Aldo Leonel Zunino Becerra <a
 					href="https://www.linkedin.com/in/aldo-leonel-zunino-becerra/"
@@ -32,41 +36,53 @@ import SectionConteiner from "../components/SectionConteiner.astro";
 					><Maintag>Disponible Para Trabajar</Maintag></a
 				>
 			</h1>
-			<h2 class="text-2xl opacity-70">Desarrollador Full Stack.</h2>
-			<h3 class="text-lg opacity-60 text-center">
+			<h2 class="text-xl md:text-2xl opacity-70">Desarrollador Full Stack.</h2>
+			<h3 class="text-base md:text-lg opacity-60 text-center text-wrap mt-2 max-w-2xl">
 				Especializado en desarrollo web y automatización de procesos,
 				impulsando la adopción de herramientas de IA y mentoría técnica.
 			</h3>
 
-			<nav class="flex gap-x-4 mt-8">
+			<nav class="flex gap-4 mt-8 flex-wrap justify-center">
 				<Badges
 					href="https://www.linkedin.com/in/aldo-leonel-zunino-becerra/"
 					target="_blank"
 				>
-					<IconLinkedin class="size-6" />
+					<IconLinkedin class="size-4 md:size-6" />
 					LinkedIn
 				</Badges>
 				<Badges href="https://github.com/ZuninoAldo" target="_blank">
-					<IconGithub class="size-6" />
+					<IconGithub class="size-4 md:size-6" />
 					GitHub
 				</Badges>
 				<Badges href="mailto:zunino.aldo@gmail.com">
-					<IconGmail class="size-6" />
+					<IconGmail class="size-4 md:size-6" />
 					zunino.aldo@gmail.com
 				</Badges>
 				<Badges href="https://wa.me/+5491162063047" target="_blank">
-					<IconWhatsApp class="size-6" />
+					<IconWhatsApp class="size-4 md:size-6" />
 					WhatsApp
 				</Badges>
 			</nav>
 		</SectionConteiner>
 
-		<SectionConteiner class="py-20 pb-20">
-			<h2 class="text-2xl font-semibold text-white opacity-70 mb-10  flex gap-x-3 items-center">
+		<SectionConteiner id="experiencia" class="py-20 pb-20">
+			<h2
+				class="text-3xl font-semibold text-white opacity-70 mb-10 flex gap-x-3 items-center"
+			>
 				<IconWork class="size-8" />
 				Experiencia Laboral
 			</h2>
 			<Experience />
+		</SectionConteiner>
+
+		<SectionConteiner id="proyectos" class="py-20 pb-20">
+			<h2
+				class="text-3xl font-semibold text-white opacity-70 mb-10 flex gap-x-3 items-center"
+			>
+				<IconProyects class="size-8" />
+				Proyectos Personales
+			</h2>
+			<Proyect />
 		</SectionConteiner>
 	</main>
 </Layout>

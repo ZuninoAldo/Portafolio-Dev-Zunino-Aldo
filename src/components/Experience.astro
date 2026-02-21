@@ -3,16 +3,18 @@ import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
     {
-        date: "January 09th, 2025",
-        title: "Flowbite Figma v1.3.0",
+        date: "Mayo 2025 - Enero 2026",
+        title: "Desarrollador Full Stack Trainee",
+        enterprise: "Scarlet Subtitling",
         description:
-            "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
+            "Revisión de componentes Angular. Gestión del bases de datos con MongoDB. Participación en  reformas a la plataforma con orientación a objetivos y simplicidad del sistema. Revisiones generales, actualizaciones y mantenimiento de la plataforma en conjunto con asistencia personalizada a los usuarios.",
     },
     {
-        date: "October 14th, 2024",
-        title: "Flowbite Library v1.2.2",
+        date: "Enero 2025 - Mayo 2025",
+        title: "Programador Full Stack Trainee",
+        enterprise: "The AV School",
         description:
-            "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
+            "Integración de Andreani para envíos de productos y seguimiento de los mismos. Gestión de stock de productos en tienda y en deposito con DUX. Integración de diferentes métodos de pago con NAVE. Revisiones generales, actualización y mantenimiento web."
     },
 ];
 ---
@@ -21,7 +23,7 @@ const EXPERIENCE = [
     {
         EXPERIENCE.map((experience) => (
             <li class="mb-10 ms-6">
-                <ExperienceItem {...experience}/>
+                <ExperienceItem {...experience} />
             </li>
         ))
     }

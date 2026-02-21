@@ -1,0 +1,44 @@
+---
+const PROYECTS = [
+    {
+        title: "Portafolio Developer",
+        description:
+            "Mi portafolio personal, construido con Astro y Tailwind CSS.",
+        link: "https://zuninoaldo.github.io/portafolio-developer/",
+        image: "https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png",
+        tags: ["Astro", "Tailwind CSS", "JavaScript"],
+    },
+    {
+        title: "E-commerce Store",
+        description:
+            "Tienda en línea para productos tecnológicos, con carrito de compras y pasarela de pago.",
+        link: "https://zuninoaldo.github.io/e-commerce-store/",
+        image: "https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png",
+        tags: ["React", "Node.js", "MongoDB"],
+    },
+    {
+        title: "Chat Application",
+        description:
+            "Aplicación de chat en tiempo real con WebSockets y autenticación de usuarios.",
+        link: "https://zuninoaldo.github.io/chat-application/",
+        image: "https://www.uship.com/learn/ca/wp-content/uploads/sites/3/thumbnail-placeholder-300x200-300x200.png",
+        tags: ["Vue.js", "Express", "Socket.io"],
+    },
+];
+---
+
+{
+    PROYECTS.map((proyect) => (
+        <article>
+            <img src={proyect.image} alt={`Captura de pantalla del Proyecto ${proyect.title}`} />
+            <h3>{proyect.title}</h3>
+            <p>{proyect.description}</p>
+            <a href={proyect.link}>{proyect.link}</a>
+            <ul>
+                {proyect.tags.map((tag) => (
+                    <li>{tag}</li>
+                ))}
+            </ul>
+        </article>
+    ))
+}
