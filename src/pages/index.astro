@@ -13,6 +13,8 @@ import SectionConteiner from "../components/SectionConteiner.astro";
 import Maintag from "../components/Maintag.astro";
 import Experience from "../components/Experience.astro";
 import Proyect from "../components/Proyect.astro";
+import AboutMe from "../components/AboutMe.astro";
+import IconAboutMe from "../components/icons/IconAboutMe.astro";
 ---
 
 <Layout
@@ -36,8 +38,12 @@ import Proyect from "../components/Proyect.astro";
 					><Maintag>Disponible Para Trabajar</Maintag></a
 				>
 			</h1>
-			<h2 class="text-xl md:text-2xl opacity-70">Desarrollador Full Stack.</h2>
-			<h3 class="text-base md:text-lg opacity-60 text-center text-wrap mt-2 max-w-2xl">
+			<h2 class="text-xl md:text-2xl opacity-70">
+				Desarrollador Full Stack.
+			</h2>
+			<h3
+				class="text-base md:text-lg opacity-60 text-center text-wrap mt-2 max-w-2xl"
+			>
 				Especializado en desarrollo web y automatización de procesos,
 				impulsando la adopción de herramientas de IA y mentoría técnica.
 			</h3>
@@ -83,6 +89,16 @@ import Proyect from "../components/Proyect.astro";
 				Proyectos Personales
 			</h2>
 			<Proyect />
+		</SectionConteiner>
+
+		<SectionConteiner id="sobremi" class="py-20 pb-20">
+			<h2
+				class="text-4xl font-semibold text-white opacity-70 mb-10 flex gap-x-3 items-center"
+			>
+				<IconAboutMe class="size-10" />
+				Sobre Mi
+			</h2>
+			<AboutMe />
 		</SectionConteiner>
 	</main>
 </Layout>
