@@ -5,6 +5,8 @@ import IconGmail from "../components/icons/IconGmail.astro";
 import IconWhatsApp from "../components/icons/IconWhatsApp.astro";
 import IconWork from "../components/icons/IconWork.astro";
 import IconProyects from "../components/icons/IconProyects.astro";
+import IconAboutMe from "../components/icons/IconAboutMe.astro";
+import IconLeadership from "../components/icons/IconLeadership.astro";
 
 import Layout from "../layouts/Layout.astro";
 
@@ -14,7 +16,7 @@ import Maintag from "../components/Maintag.astro";
 import Experience from "../components/Experience.astro";
 import Proyect from "../components/Proyect.astro";
 import AboutMe from "../components/AboutMe.astro";
-import IconAboutMe from "../components/icons/IconAboutMe.astro";
+import Leadership from "../components/Leadership.astro";
 ---
 
 <Layout
@@ -22,7 +24,7 @@ import IconAboutMe from "../components/icons/IconAboutMe.astro";
 	description="Portafolio de Aldo Leonel Zunino Becerra, programador y desarrollador full stack, especializado en desarrollo web y automatización de procesos, impulsando la adopción de herramientas de IA y mentoría técnica.."
 >
 	<main class="px-4">
-		<SectionConteiner class="py-18 pb-20">
+		<SectionConteiner class="mt-10 py-18 pb-20">
 			<img
 				class="rounded-4xl w-2xs h-2xs mb-6"
 				src="https://avatars.githubusercontent.com/u/175363752?v=4"
@@ -99,6 +101,16 @@ import IconAboutMe from "../components/icons/IconAboutMe.astro";
 				Sobre Mi
 			</h2>
 			<AboutMe />
+		</SectionConteiner>
+
+		<SectionConteiner id="liderazgo" class="py-20 pb-20">
+			<h2
+				class="text-4xl font-semibold text-white opacity-70 mb-10 flex gap-x-3 items-center"
+			>
+				<IconLeadership class="size-10" />
+				Liderazgo y Mentoría
+			</h2>
+			<Leadership />
 		</SectionConteiner>
 	</main>
 </Layout>

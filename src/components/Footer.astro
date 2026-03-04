@@ -1,5 +1,80 @@
-<footer class="py-30">
-    <p class="text-center text-sm text-white opacity-50">
-        &copy; 2026 Aldo Leonel Zunino Becerra. Todos los derechos reservados.
-    </p>
+---
+import IconCardButton from "./icons/IconCardButton.astro";
+import IconGithub from "./icons/IconGithub.astro";
+import IconLinkedin from "./icons/IconLinkedin.astro";
+---
+
+<footer
+    id="contacto"
+    class="relative z-10 w-full max-w-5xl mx-auto p-6 md:p-12 mt-20 mb-10 border-t border-white/10 bg-white/5 backdrop-blur-sm rounded-3xl"
+>
+    <div
+        class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12"
+    >
+        <div class="text-center md:text-left">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                ¿Trabajamos juntos?
+            </h2>
+            <p class="text-gray-400 max-w-md">
+                Estoy disponible para nuevas oportunidades. Si tienes un
+                proyecto en mente o buscas sumar a alguien con mi perfil a tu
+                equipo, no dudes en escribirme.
+            </p>
+        </div>
+
+        <div class="flex flex-col justify-around gap-8">
+            <div>
+                <a
+                    href="https://www.linkedin.com/in/aldo-leonel-zunino-becerra/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-300 bg-purple-600 rounded-full hover:bg-purple-700 hover:scale-105 shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)]"
+                >
+                    Escribime a Linkedin
+                    <IconCardButton class="w-8 h-8 ml-2" />
+                </a>
+            </div>
+
+            <div>
+                <a
+                    href="mailto:zunino.aldo@gmail.com"
+                    class="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-300 bg-purple-600 rounded-full hover:bg-purple-700 hover:scale-105 shadow-[0_0_20px_rgba(147,51,234,0.4)] hover:shadow-[0_0_30px_rgba(147,51,234,0.6)]"
+                >
+                    Enviame un Email
+                    <IconCardButton class="w-8 h-8 ml-2" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="border-white/10 my-8" />
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex gap-6">
+            <a
+                href="https://www.linkedin.com/in/aldo-leonel-zunino-becerra/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-purple-400 transition-colors"
+            >
+                <span class="sr-only">LinkedIn</span>
+                <IconLinkedin class="w-6 h-6" />
+            </a>
+            <a
+                href="https://github.com/ZuninoAldo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-purple-400 transition-colors"
+            >
+                <span class="sr-only">GitHub</span>
+                <IconGithub class="w-6 h-6" />
+            </a>
+        </div>
+
+        <p class="text-sm text-white/40 text-center md:text-right">
+            &copy; {new Date().getFullYear()} Aldo Leonel Zunino Becerra.<br
+                class="block md:hidden"
+            /> Todos los derechos reservados.
+        </p>
+    </div>
 </footer>

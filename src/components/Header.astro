@@ -1,10 +1,46 @@
-<header class="flex justify-center items-center p-8 text-white w-full mx-auto xl:w-4/5">
-    <nav class="flex flex-row gap-x-12 p-4 opacity-70">
-        <a href="/">Inicio</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobremi">Sobre mi</a>
-        <a href="#liderazgo">Liderazgo</a>
-        <a href="#contacto">Contacto</a>
+---
+
+---
+
+<header
+    class="fixed top-0 z-50 flex items-center justify-center w-full mt-4 transition-all duration-300"
+>
+    <nav
+        class="flex px-5 py-2 text-sm font-medium rounded-full text-gray-200 bg-black/50 border border-white/10 backdrop-blur-md shadow-lg overflow-x-auto overflow-y-hidden nav-scroll"
+    >
+        <a
+            class="px-3 py-2 transition hover:text-purple-400 whitespace-nowrap"
+            href="/#top">Inicio</a
+        >
+        <a
+            class="px-3 py-2 transition hover:text-purple-400 whitespace-nowrap"
+            href="#experiencia">Experiencia</a
+        >
+        <a
+            class="px-3 py-2 transition hover:text-purple-400 whitespace-nowrap"
+            href="#proyectos">Proyectos</a
+        >
+        <a
+            class="px-3 py-2 transition hover:text-purple-400 whitespace-nowrap"
+            href="#sobremi">Sobre mí</a
+        >
+        <a
+            class="px-3 py-2 transition hover:text-purple-400 whitespace-nowrap"
+            href="#liderazgo">Liderazgo</a
+        >
+        <a
+            class="px-3 py-2 transition hover:text-purple-400 whitespace-nowrap"
+            href="#contacto">Contacto</a
+        >
     </nav>
 </header>
+
+<style>
+    .nav-scroll::-webkit-scrollbar {
+        display: none;
+    }
+    .nav-scroll {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>

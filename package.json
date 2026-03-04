@@ -11,7 +11,7 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.2.8",
     "@tailwindcss/vite": "^4.2.0",
-    "astro": "^5.17.1",
+    "astro": "5.18.0",
     "flowbite": "^4.0.1",
     "tailwindcss": "^4.2.0"
   }
