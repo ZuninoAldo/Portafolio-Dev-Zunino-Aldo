@@ -17,6 +17,7 @@ import Experience from "../components/Experience.astro";
 import Proyect from "../components/Proyect.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Leadership from "../components/Leadership.astro";
+import IconDownload from "../components/icons/IconDownload.astro";
 ---
 
 <Layout
@@ -55,20 +56,31 @@ import Leadership from "../components/Leadership.astro";
 					href="https://www.linkedin.com/in/aldo-leonel-zunino-becerra/"
 					target="_blank"
 				>
-					<IconLinkedin class="size-4 md:size-6" />
+					<IconLinkedin class="size-3 md:size-5" />
 					LinkedIn
 				</Badges>
+
 				<Badges href="https://github.com/ZuninoAldo" target="_blank">
-					<IconGithub class="size-4 md:size-6" />
+					<IconGithub class="size-3 md:size-5" />
 					GitHub
 				</Badges>
+
 				<Badges href="mailto:zunino.aldo@gmail.com">
-					<IconGmail class="size-4 md:size-6" />
+					<IconGmail class="size-3 md:size-5" />
 					zunino.aldo@gmail.com
 				</Badges>
+
 				<Badges href="https://wa.me/+5491162063047" target="_blank">
-					<IconWhatsApp class="size-4 md:size-6" />
+					<IconWhatsApp class="size-3 md:size-5" />
 					WhatsApp
+				</Badges>
+
+				<Badges
+					href="/public/Cv/Cv-Zunino-Becerra-Aldo.pdf"
+					download="CV-Zunino-Becerra-Aldo"
+				>
+					<IconDownload class="size-3 md:size-5" />
+					Descargar CV
 				</Badges>
 			</nav>
 		</SectionConteiner>
