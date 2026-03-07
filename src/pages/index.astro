@@ -18,6 +18,7 @@ import Proyect from "../components/Proyect.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Leadership from "../components/Leadership.astro";
 import IconDownload from "../components/icons/IconDownload.astro";
+import IconLanguage from "../components/icons/IconLanguage.astro";
 ---
 
 <Layout
@@ -41,14 +42,17 @@ import IconDownload from "../components/icons/IconDownload.astro";
 					><Maintag>Disponible Para Trabajar</Maintag></a
 				>
 			</h1>
-			<h2 class="text-xl md:text-2xl opacity-70">
+			<h2 class="text-xl md:text-3xl opacity-70">
 				Desarrollador Full Stack.
 			</h2>
 			<h3
-				class="text-base md:text-lg opacity-60 text-center text-wrap mt-2 max-w-2xl"
+				class="text-base md:text-lg opacity-60 text-center text-pretty mt-2 max-w-2xl"
 			>
-				Especializado en desarrollo web y automatización de procesos,
-				impulsando la adopción de herramientas de IA y mentoría técnica.
+				Especializado en la creación de soluciones web y automatización
+				de procesos. Utilizo la Inteligencia Artificial como aliada para
+				optimizar mi código y maximizar resultados. Complemento mi
+				perfil técnico con una fuerte vocación por el liderazgo y la
+				mentoría.
 			</h3>
 
 			<nav class="flex gap-4 mt-8 flex-wrap justify-center">
@@ -81,6 +85,11 @@ import IconDownload from "../components/icons/IconDownload.astro";
 				>
 					<IconDownload class="size-3 md:size-5" />
 					Descargar CV
+				</Badges>
+
+				<Badges>
+					<IconLanguage class="size-3 md:size-5" />
+					English B2
 				</Badges>
 			</nav>
 		</SectionConteiner>
