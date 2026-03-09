@@ -1,46 +1,39 @@
-# Astro Starter Kit: Basics
+# 🚀 Portafolio Personal - Aldo Zunino
 
-```sh
-bun create astro@latest -- --template basics
-```
+Bienvenido al repositorio de mi portafolio personal como Desarrollador Full Stack. Este proyecto fue diseñado para mostrar mi experiencia, proyectos y habilidades tecnológicas, priorizando el rendimiento, el SEO y una experiencia de usuario (UX) fluida y moderna.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🛠️ Tecnologías Utilizadas
 
-## 🚀 Project Structure
+Este proyecto fue construido desde cero utilizando un stack moderno y eficiente:
 
-Inside of your Astro project, you'll see the following folders and files:
+* **Framework:** [Astro](https://astro.build/) (Elegido por su arquitectura Zero-JS por defecto y velocidad extrema).
+* **Estilos:** [Tailwind CSS](https://tailwindcss.com/) (Para un diseño *responsive*, escalable y utility-first).
+* **Deploy:** Netlify (Integración continua).
+* **Iconos:** SVG optimizados.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## ⚙️ Características Principales
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+* **Rendimiento Extremo:** Carga casi instantánea gracias a la generación de sitios estáticos de Astro.
+* **Diseño UI/UX Moderno:** Implementación de *Glassmorphism*, paleta de colores de alto contraste y diseño modular (*Bento Box*).
+* **Totalmente Responsive:** Adaptable a cualquier dispositivo móvil o de escritorio.
 
-## 🧞 Commands
+## 🚀 Instalación y Despliegue Local
 
-All commands are run from the root of the project, from a terminal:
+Si querés clonar este proyecto para revisarlo localmente, seguí estos pasos:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+1. Cloná el repositorio:
+   `git clone https://github.com/ZuninoAldo/tu-repo-portafolio.git`
+2. Instalá las dependencias:
+   `npm install`
+3. Levantá el servidor de desarrollo:
+   `npm run dev`
+4. Abrí `http://localhost:4321` en tu navegador.
 
-## 👀 Want to learn more?
+## 🔗 Enlaces
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+* **Portafolio en Vivo:** [Tu Link de Netlify Acá]
+* **LinkedIn:** https://www.linkedin.com/in/aldo-leonel-zunino-becerra/
+
+
+---
+*Diseñado y desarrollado por Aldo Leonel Zunino Becerra.*
