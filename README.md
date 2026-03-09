@@ -22,7 +22,7 @@ Este proyecto fue construido desde cero utilizando un stack moderno y eficiente:
 Si querés clonar este proyecto para revisarlo localmente, seguí estos pasos:
 
 1. Cloná el repositorio:
-   `git clone https://github.com/ZuninoAldo/tu-repo-portafolio.git`
+   `git clone https://github.com/ZuninoAldo/Portafolio-Dev-Zunino-Aldo`
 2. Instalá las dependencias:
    `npm install`
 3. Levantá el servidor de desarrollo:
@@ -31,7 +31,7 @@ Si querés clonar este proyecto para revisarlo localmente, seguí estos pasos:
 
 ## 🔗 Enlaces
 
-* **Portafolio en Vivo:** [Tu Link de Netlify Acá]
+* **Portafolio en Vivo:** https://portafoliozuninoaldo.netlify.app
 * **LinkedIn:** https://www.linkedin.com/in/aldo-leonel-zunino-becerra/
 
 
